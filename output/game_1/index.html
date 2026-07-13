@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Snake Game</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Chart.js CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+<div class="game-container">
+    <h1>🐍 Snake Game</h1>
+
+    <div class="info">
+        <span id="score">Score: 0</span>
+        <span id="timer">Time: 0s</span>
+    </div>
+
+    <canvas id="gameCanvas" width="400" height="400"></canvas>
+
+    <div class="buttons">
+        <button id="pauseBtn">Pause</button>
+        <button id="resumeBtn">Resume</button>
+        <button id="restartBtn">Restart</button>
+    </div>
+
+    <div id="result"></div>
+
+    <!-- Metrics Dashboard -->
+    <h2>📊 Game Metrics</h2>
+    <canvas id="scoreChart" width="400" height="200"></canvas>
+    <canvas id="foodRateChart" width="400" height="200"></canvas>
+    <canvas id="survivalChart" width="400" height="200"></canvas>
+
+    <p>Use ⬅️ ⬆️ ➡️ ⬇️ arrow keys</p>
+</div>
+
+<script src="game.js"></script>
+</body>
+</html>
